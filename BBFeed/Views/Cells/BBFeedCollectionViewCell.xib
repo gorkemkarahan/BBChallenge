@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNovaSoft-Regular.otf">
+            <string>ProximaNovaSoft-Regular</string>
+        </array>
+        <array key="ProximaNovaSoft-Semibold.otf">
+            <string>ProximaNovaSoft-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BBFeedCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePictureAbduljabbar" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-Ru-jvJ">
+                        <rect key="frame" x="20" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Ryu-b9-9Xt"/>
+                            <constraint firstAttribute="width" constant="60" id="xJx-W9-gvp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzb-sg-sNS">
+                        <rect key="frame" x="90" y="16" width="6" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AvM-3f-e4O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Semibold" family="Proxima Nova Soft" pointSize="20"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.4K PEOPLE AND 27 BULLS PLAYED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwc-Ry-zHY">
+                        <rect key="frame" x="90" y="44" width="199" height="12"/>
+                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t13-XS-Rla">
+                        <rect key="frame" x="90" y="0.0" width="165" height="12"/>
+                        <attributedString key="attributedText">
+                            <fragment content="forteko">
+                                <attributes>
+                                    <color key="NSColor" red="0.14117647058823529" green="0.69411764705882351" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="ProximaNovaSoft-Semibold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" placed this 2 hours ago">
+                                <attributes>
+                                    <color key="NSColor" red="0.67450980392156867" green="0.72156862745098038" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="ProximaNovaSoft-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRi-Bq-EdJ">
+                        <rect key="frame" x="99.5" y="16.5" width="36.5" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-t7-2gI">
+                                <rect key="frame" x="2" y="2" width="30.5" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="RXr-IV-Kuy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNovaSoft-Semibold" family="Proxima Nova Soft" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hXe-t7-2gI" firstAttribute="top" secondItem="tRi-Bq-EdJ" secondAttribute="top" constant="2" id="9rq-qb-iYf"/>
+                            <constraint firstAttribute="trailing" secondItem="hXe-t7-2gI" secondAttribute="trailing" constant="4" id="JGF-HL-Qbu"/>
+                            <constraint firstAttribute="bottom" secondItem="hXe-t7-2gI" secondAttribute="bottom" id="XNh-RB-WHE"/>
+                            <constraint firstItem="hXe-t7-2gI" firstAttribute="leading" secondItem="tRi-Bq-EdJ" secondAttribute="leading" constant="2" id="jI7-VY-inj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NAU-Ru-jvJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="16b-Ck-y4O"/>
+                <constraint firstItem="Gzb-sg-sNS" firstAttribute="top" secondItem="t13-XS-Rla" secondAttribute="bottom" constant="4" id="1Th-78-JiI"/>
+                <constraint firstItem="uwc-Ry-zHY" firstAttribute="top" secondItem="Gzb-sg-sNS" secondAttribute="bottom" constant="7" id="HbW-xm-hfS"/>
+                <constraint firstItem="t13-XS-Rla" firstAttribute="leading" secondItem="NAU-Ru-jvJ" secondAttribute="trailing" constant="10" id="JP4-M3-ZoO"/>
+                <constraint firstAttribute="bottom" secondItem="NAU-Ru-jvJ" secondAttribute="bottom" id="LAt-pY-54c"/>
+                <constraint firstItem="Gzb-sg-sNS" firstAttribute="leading" secondItem="t13-XS-Rla" secondAttribute="leading" id="Og1-ZQ-mXz"/>
+                <constraint firstItem="NAU-Ru-jvJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tsf-nP-y9j"/>
+                <constraint firstItem="uwc-Ry-zHY" firstAttribute="leading" secondItem="Gzb-sg-sNS" secondAttribute="leading" id="bOo-Ku-X5n"/>
+                <constraint firstItem="t13-XS-Rla" firstAttribute="top" secondItem="NAU-Ru-jvJ" secondAttribute="top" id="sGv-hQ-E8E"/>
+                <constraint firstItem="hXe-t7-2gI" firstAttribute="centerY" secondItem="Gzb-sg-sNS" secondAttribute="centerY" id="sVZ-z0-ofR"/>
+                <constraint firstItem="tRi-Bq-EdJ" firstAttribute="leading" secondItem="Gzb-sg-sNS" secondAttribute="trailing" constant="4" id="slH-Nl-WAN"/>
+            </constraints>
+            <size key="customSize" width="487" height="50"/>
+            <connections>
+                <outlet property="imgVPlacedBy" destination="NAU-Ru-jvJ" id="oUm-gt-fRU"/>
+                <outlet property="lblBetRate" destination="hXe-t7-2gI" id="HMu-Ma-bwd"/>
+                <outlet property="lblCouponName" destination="Gzb-sg-sNS" id="FfD-yu-glB"/>
+                <outlet property="lblNumberOfPeoplePlayed" destination="uwc-Ry-zHY" id="dpL-6j-fSA"/>
+                <outlet property="lblplacedBy" destination="t13-XS-Rla" id="dzd-HX-8ZF"/>
+                <outlet property="viewBetRate" destination="tRi-Bq-EdJ" id="bS9-A8-yz9"/>
+            </connections>
+            <point key="canvasLocation" x="-34.5" y="-68"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ProfilePictureAbduljabbar" width="60" height="60"/>
+    </resources>
+</document>

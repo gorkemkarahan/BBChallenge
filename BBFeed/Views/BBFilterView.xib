@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNovaSoft-Regular.otf">
+            <string>ProximaNovaSoft-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BBFilterView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyFeedHeader" translatesAutoresizingMaskIntoConstraints="NO" id="BO4-IK-5DR">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRU-xf-Jar">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People you follow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-h5-abc">
+                            <rect key="frame" x="20" y="266" width="110" height="14"/>
+                            <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="MY FEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQD-Vu-7Ln">
+                            <rect key="frame" x="20" y="244" width="82" height="20"/>
+                            <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="K0m-h5-abc" firstAttribute="top" secondItem="wQD-Vu-7Ln" secondAttribute="bottom" constant="2" id="CIn-mF-rhK"/>
+                        <constraint firstAttribute="bottom" secondItem="K0m-h5-abc" secondAttribute="bottom" constant="20" id="SV1-Wo-ILU"/>
+                        <constraint firstItem="wQD-Vu-7Ln" firstAttribute="leading" secondItem="K0m-h5-abc" secondAttribute="leading" id="XMN-VI-jrd"/>
+                        <constraint firstItem="K0m-h5-abc" firstAttribute="leading" secondItem="IRU-xf-Jar" secondAttribute="leading" constant="20" id="sT6-Xp-KcP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BO4-IK-5DR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7CO-qp-6mF"/>
+                <constraint firstAttribute="bottom" secondItem="BO4-IK-5DR" secondAttribute="bottom" id="JTv-oa-MKa"/>
+                <constraint firstItem="IRU-xf-Jar" firstAttribute="top" secondItem="BO4-IK-5DR" secondAttribute="top" id="Uvq-NI-umK"/>
+                <constraint firstItem="IRU-xf-Jar" firstAttribute="bottom" secondItem="BO4-IK-5DR" secondAttribute="bottom" id="ecF-No-O4k"/>
+                <constraint firstItem="IRU-xf-Jar" firstAttribute="trailing" secondItem="BO4-IK-5DR" secondAttribute="trailing" id="hq5-PU-Cgt"/>
+                <constraint firstItem="BO4-IK-5DR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nmu-um-B8H"/>
+                <constraint firstAttribute="trailing" secondItem="BO4-IK-5DR" secondAttribute="trailing" id="rIk-DI-B87"/>
+                <constraint firstItem="IRU-xf-Jar" firstAttribute="leading" secondItem="BO4-IK-5DR" secondAttribute="leading" id="x6m-ge-Gsb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cnstrntSubtitleBottomVerticalSpace" destination="SV1-Wo-ILU" id="XT0-Ts-BDP"/>
+                <outlet property="imgVFilter" destination="BO4-IK-5DR" id="vso-Ag-wq7"/>
+                <outlet property="lblSubtitle" destination="K0m-h5-abc" id="aIn-wn-KFX"/>
+                <outlet property="lblTitle" destination="wQD-Vu-7Ln" id="tXd-je-Heo"/>
+            </connections>
+            <point key="canvasLocation" x="-326" y="-256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MyFeedHeader" width="340" height="300"/>
+    </resources>
+</document>
